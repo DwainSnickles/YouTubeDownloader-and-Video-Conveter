@@ -1,0 +1,652 @@
+[Header]
+ProjectFileVersion = "1.1"
+[General]
+Program name = YouTube Downloader Pro
+Program version = 2.1
+Windows 2000 = 1
+Windows XP = 1
+Windows Server 2003 = 1
+Windows Vista = 1
+Windows Server 2008 = 1
+Windows 7 = 1
+Windows 8 = 1
+Windows 10 = 1
+Windows Server 2016 = 1
+DoNotCheckOS = 0
+Company name = Productfast Software
+Website = http://
+SFA = 1
+DFA = 1
+Comp = 1
+[Graphics]
+Wizard image = <main>
+Header image = <main>
+Install-icon image = <main>
+Show Label = 1
+Windows style = 1
+XpStyle = 1
+[Files]
+Include Zipfile = 0
+Zipfile = 
+Installation path = <programfiles>\<company>\<appname>\
+Autcip = 1
+[Uninstall]
+Vwau = 0
+Website = 
+Include uninstaller = 1
+Uninstaller filename = Uninstall
+[Licence]
+Licence dialog = 0
+[Finish]
+Sart program = 0
+Reboot computer = 0
+Execute DLL: = 0
+Program = <installpath>\
+ProgramArguments = 
+Dll = 
+[Shortcuts]
+Allowtc = 1
+Shortcut path = <company>\<appname>\
+[Serialoptions]
+Allows = 0
+Number = 20
+[SplashScreen]
+Image = 
+Sound = 
+Time = 2
+PlaySound = 0
+Allow = 0
+[Build]
+File = C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\SetupYTD\ytdSetup.exe
+[Updater]
+Allow = 0
+1 = <appname>
+2 = <appversion>
+3 = http://
+4 = http://
+5 = http://
+6 = Update
+Language = 0
+RunProg = 
+RunProgs = 0
+Execdlls = 0
+[Languages]
+3
+[Files/Dirs]
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\mp3gain\
+n/a
+[Folder]
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\MP3s\
+n/a
+[Folder]
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Videos\
+n/a
+[Folder]
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Accord.dll.config
+213 Byte
+config
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AngleSharp.dll
+810.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AngleSharp.xml
+1.1 MB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AutoUpdater.NET.dll
+392 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AutoUpdater.NET.pdb
+51.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AutoUpdater.NET.xml
+20.6 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\avcodec-57.dll
+23.4 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\avdevice-57.dll
+1.9 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\avfilter-6.dll
+4 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\avformat-57.dll
+4.7 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\avutil-55.dll
+646.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AxInterop.ShockwaveFlashObjects.dll
+18 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\AxInterop.WMPLib.dll
+52.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\BurnMedia.exe
+1.4 MB
+exe
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\BurnMedia.exe.config
+161 Byte
+config
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\BurnMedia.pdb
+101.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\ColorTrackBar.dll
+32 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\ColorTrackBar.pdb
+31.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Export.dll
+9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Export.pdb
+25.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\ffmpeg.exe
+43 MB
+exe
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\FFMPEG-CSWrapper.dll
+17.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\FFMPEG-CSWrapper.pdb
+31.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.AudioInfo.dll
+52.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.AudioInfo.pdb
+133.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.AudioInfo.xml
+45.4 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Common.dll
+25.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Common.pdb
+73.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Common.xml
+34.9 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Tagging.dll
+209 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Tagging.pdb
+593.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\IdSharp.Tagging.xml
+275.3 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\iGreen.Controls.uControls.uLabelX.dll
+22 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\iGreen.Controls.uControls.uLabelX.pdb
+41.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Interop.ShockwaveFlashObjects.dll
+22.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Interop.WMPLib.dll
+323 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\kuv0kama.newcfg
+928 Byte
+newcfg
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\kuv0kama.tmp
+0 Byte
+tmp
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\libvideo.compat.dll
+18.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\libvideo.compat.pdb
+6.2 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\libvideo.dll
+48.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\libvideo.pdb
+15.6 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Logger.dll
+4.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Logger.pdb
+11.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\LtGt.dll
+95 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\LtGt.xml
+24.3 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\MediaToolkit.dll
+18.9 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Microsoft.Win32.Primitives.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Microsoft.WindowsAPICodePack.dll
+96 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Microsoft.WindowsAPICodePack.Shell.dll
+529.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Microsoft.WindowsAPICodePack.Shell.xml
+1.4 MB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Microsoft.WindowsAPICodePack.xml
+149.4 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NAudio.dll
+498 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NAudio.Flac.dll
+96 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NAudio.WindowsMediaFormat.dll
+81 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NAudio.xml
+1 MB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\netstandard.dll
+96.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Newtonsoft.Json.dll
+659.9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Newtonsoft.Json.pdb
+244.4 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Newtonsoft.Json.xml
+685.5 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NReco.VideoConverter.dll
+16.2 MB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\NReco.VideoConverter.xml
+28.7 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\nxudoofj.newcfg
+20.1 KB
+newcfg
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\nxudoofj.tmp
+0 Byte
+tmp
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\postproc-54.dll
+108 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Sprache.dll
+57 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Sprache.xml
+48.7 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\suhtr2gl.newcfg
+20.1 KB
+newcfg
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\suhtr2gl.tmp
+0 Byte
+tmp
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\swresample-2.dll
+286 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\swscale-4.dll
+500 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.AppContext.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Collections.Concurrent.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Collections.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Collections.NonGeneric.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Collections.Specialized.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ComponentModel.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ComponentModel.EventBasedAsync.dll
+21.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ComponentModel.Primitives.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ComponentModel.TypeConverter.dll
+22.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Console.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Data.Common.dll
+150.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.Contracts.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.Debug.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.FileVersionInfo.dll
+20.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.Process.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.StackTrace.dll
+23.4 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.TextWriterTraceListener.dll
+20.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.Tools.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.TraceSource.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Diagnostics.Tracing.dll
+30.9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Drawing.Primitives.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Dynamic.Runtime.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Globalization.Calendars.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Globalization.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Globalization.Extensions.dll
+25.4 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.Compression.dll
+108.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.Compression.ZipFile.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.dll
+20.6 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.FileSystem.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.FileSystem.DriveInfo.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.FileSystem.Primitives.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.FileSystem.Watcher.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.IsolatedStorage.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.MemoryMappedFiles.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.Pipes.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.IO.UnmanagedMemoryStream.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Linq.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Linq.Expressions.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Linq.Parallel.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Linq.Queryable.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Http.dll
+193.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.NameResolution.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.NetworkInformation.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Ping.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Primitives.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Requests.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Security.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.Sockets.dll
+29.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.WebHeaderCollection.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.WebSockets.Client.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Net.WebSockets.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ObjectModel.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Reflection.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Reflection.Extensions.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Reflection.Primitives.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Resources.Reader.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Resources.ResourceManager.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Resources.Writer.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.CompilerServices.Unsafe.dll
+21.6 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.CompilerServices.Unsafe.xml
+13.8 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.CompilerServices.VisualC.dll
+21.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.dll
+28.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Extensions.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Handles.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.InteropServices.dll
+23.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.InteropServices.RuntimeInformation.dll
+28 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Numerics.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Serialization.Formatters.dll
+20.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Serialization.Json.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Serialization.Primitives.dll
+26.4 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Runtime.Serialization.Xml.dll
+24.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Claims.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Cryptography.Algorithms.dll
+45.9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Cryptography.Csp.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Cryptography.Encoding.dll
+20.8 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Cryptography.Primitives.dll
+21.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Cryptography.X509Certificates.dll
+22.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.Principal.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Security.SecureString.dll
+21.9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Text.Encoding.CodePages.dll
+743.6 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Text.Encoding.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Text.Encoding.Extensions.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Text.RegularExpressions.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.Overlapped.dll
+36.9 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.Tasks.dll
+21.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.Tasks.Parallel.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.Thread.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.ThreadPool.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Threading.Timer.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.ValueTuple.dll
+77.3 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.ReaderWriter.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.XDocument.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.XmlDocument.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.XmlSerializer.dll
+21.2 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.XPath.dll
+20.7 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\System.Xml.XPath.XDocument.dll
+22.4 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\Tyrrrz.Extensions.dll
+42.5 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\video-audio-icon.ico
+192.9 KB
+ico
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.application
+1.8 KB
+application
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.exe
+8.1 MB
+exe
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.exe.config
+20.1 KB
+config
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.pdb
+293.5 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.vshost.application
+1.8 KB
+application
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.vshost.exe
+22.2 KB
+exe
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeDownloader.vshost.exe.manifest
+40.6 KB
+manifest
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeExplode.dll
+89 KB
+dll
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeExplode.pdb
+33.6 KB
+pdb
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\YoutubeExplode.xml
+60.9 KB
+xml
+C:\Users\dwain.DESKTOP-PBV6NB0\Desktop\Youtube Downloader Files\ZipExtractor.log
+535 Byte
+log
+[Licence_Begin]
+128
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}
+\viewkind4\uc1\pard\cf0\f0\fs17\par
+}
+ [Licence_End]
+[Registry]
+[Variables]
+[SCs]
+Desktop
+YouTube Downlader
+<installpath>\YoutubeDownloader.exe
+
+
+0
+Startmenu
+Youtube Downloader
+<installpath>\YoutubeDownloader.exe
+
+
+0
+[IFP_End]
+[Serials]
+[Serials_End]
+[Commands]
