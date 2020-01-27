@@ -7,4 +7,5 @@ On the video converter page you can set and change many features such as Bitrate
 This software has a MP3 trimmer that allows you to trim start and end of songs
 Full mp3 tag editor
 Cdrom dvd burning feature is also part of the package.
+Ful Setup also located here
 Full setup app can be downloaded from the following link https://ufile.io/nrgvbcj1zvon2h4
