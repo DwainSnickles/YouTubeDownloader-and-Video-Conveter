@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34D10FA8-8EF2-411B-B5AC-38914D828CE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YoutubeDownloader</RootNamespace>
+    <AssemblyName>YoutubeDownloader</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.8.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C7CB37DFA489F8AF05DE3ADA05E4562E680A11B4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>YoutubeDownloader_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AudioVideo1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.13.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.0.13.0\lib\net46\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoUpdater.NET, Version=1.5.1.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autoupdater.NET.Official.1.5.1\lib\net40\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Export">
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\Export.dll</HintPath>
+    </Reference>
+    <Reference Include="IdSharp.AudioInfo">
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\IdSharp.AudioInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="IdSharp.Common">
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\IdSharp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IdSharp.Tagging">
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\IdSharp.Tagging.dll</HintPath>
+    </Reference>
+    <Reference Include="iGreen.Controls.uControls.uLabelX">
+      <HintPath>..\..\..\..\..\Downloads\uLabelXControlSource\uLabelX Control\uLabelX\bin\Debug\iGreen.Controls.uControls.uLabelX.dll</HintPath>
+    </Reference>
+    <Reference Include="libvideo, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VideoLibrary.3.0.0\lib\netstandard1.1\libvideo.dll</HintPath>
+    </Reference>
+    <Reference Include="libvideo.compat, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\libvideo.compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Flac, Version=1.0.5702.29018, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Flac.1.0.5702.29018\lib\net45\NAudio.Flac.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>..\..\..\..\..\Desktop\Youtube Downloader Files\YouTubeDownloader-and-Video-Conveter\NAudio.WindowsMediaFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.VideoConverter, Version=1.1.3.0, Culture=neutral, PublicKeyToken=395ccb334978a0cd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.VideoConverter.1.1.3\lib\net20\NReco.VideoConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0-rc1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.5.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tyrrrz.Extensions, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\YoutubeExplode-master\YoutubeExplode-master\DemoConsole\bin\Debug\net45\Tyrrrz.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeExplode, Version=4.7.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExplode.4.7.12\lib\net45\YoutubeExplode.dll</HintPath>
+    </Reference>
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\zlib.net-mutliplatform.1.0.4\lib\net461\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Audio.cs" />
+    <Compile Include="Classes\FFmpeg.cs" />
+    <Compile Include="Classes\httpDownloader.cs" />
+    <Compile Include="Classes\OutputMidiType.cs" />
+    <Compile Include="Classes\ProgressEventArgs.cs" />
+    <Compile Include="Classes\SplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\TextProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\YouTubeDownloader.cs" />
+    <Compile Include="Classes\YouTubeVideoQuality.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="UserControls\ID3v1UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ID3v1UserControl.Designer.cs">
+      <DependentUpon>ID3v1UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ID3v2UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ID3v2UserControl.Designer.cs">
+      <DependentUpon>ID3v2UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MP3Slider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MP3Slider.designer.cs">
+      <DependentUpon>MP3Slider.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ID3v1UserControl.resx">
+      <DependentUpon>ID3v1UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ID3v2UserControl.resx">
+      <DependentUpon>ID3v2UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MP3Slider.resx">
+      <DependentUpon>MP3Slider.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Youtube Downloader Platinum.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD-Music_Icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FFmpeg\Audio\" />
+    <Folder Include="FFmpeg\Videos\" />
+    <Folder Include="System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-music-file-1-502727.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload_Files-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AudioVideo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burn%2520Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdburnSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdburnMultisession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-10-iso-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenameMP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet-ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AudioVideo.ico" />
+    <Content Include="AudioVideo1.ico" />
+    <Content Include="FFmpeg\avcodec-53.dll" />
+    <Content Include="FFmpeg\avcodec-56.dll" />
+    <Content Include="FFmpeg\avdevice-53.dll" />
+    <Content Include="FFmpeg\avdevice-56.dll" />
+    <Content Include="FFmpeg\avfilter-2.dll" />
+    <Content Include="FFmpeg\avfilter-5.dll" />
+    <Content Include="FFmpeg\avformat-53.dll" />
+    <Content Include="FFmpeg\avformat-56.dll" />
+    <Content Include="FFmpeg\avutil-51.dll" />
+    <Content Include="FFmpeg\avutil-54.dll" />
+    <Content Include="FFmpeg\ffmpeg.exe" />
+    <Content Include="FFmpeg\ffplay.exe" />
+    <Content Include="FFmpeg\ffprobe.exe" />
+    <Content Include="FFmpeg\freenect.dll" />
+    <Content Include="FFmpeg\GhostAPI.dll" />
+    <Content Include="FFmpeg\libsndfile-1.dll" />
+    <Content Include="FFmpeg\PbkComm32.dll" />
+    <Content Include="FFmpeg\PbkUsbPort.dll" />
+    <Content Include="FFmpeg\postproc-52.dll" />
+    <Content Include="FFmpeg\postproc-53.dll" />
+    <Content Include="FFmpeg\rubberband.exe" />
+    <Content Include="FFmpeg\swresample-0.dll" />
+    <Content Include="FFmpeg\swresample-1.dll" />
+    <Content Include="FFmpeg\swscale-2.dll" />
+    <Content Include="FFmpeg\swscale-3.dll" />
+    <Content Include="FFmpeg\TeRK.dll" />
+    <Content Include="FFmpeg\ThumbNails\Error.jpg" />
+    <Content Include="releases.html" />
+    <None Include="Resources\Film.png" />
+    <None Include="Resources\Error.jpg" />
+    <Content Include="video-icon.ico" />
+    <None Include="Resources\SmWaveForm1.PNG" />
+    <None Include="Resources\GreenLine11.png" />
+    <None Include="Resources\GreenLine1.png" />
+    <None Include="Resources\GreenLine.png" />
+    <None Include="Resources\Indicator3.png" />
+    <None Include="Resources\Indicator2.png" />
+    <None Include="Resources\SongWave11.jpg" />
+    <None Include="Resources\Indicator1.png" />
+    <None Include="Resources\cutMP3.png" />
+    <None Include="Resources\Indicator.png" />
+    <None Include="Resources\vertical-divider.png" />
+    <None Include="Resources\SongWave2.jpg" />
+    <None Include="Resources\SongWave1.jpg" />
+    <None Include="Resources\SongWave.jpg" />
+    <None Include="Resources\th.jpg" />
+    <None Include="Resources\Normailzation.png" />
+    <None Include="Resources\mp3gain.png" />
+    <None Include="Resources\MP3A.ico.png" />
+    <None Include="Resources\window-10-iso-file1.png" />
+    <None Include="Resources\TagEdit.png" />
+    <None Include="Resources\YTBanner.png" />
+    <None Include="Resources\YTBanner2.png" />
+    <None Include="Resources\Banner.png" />
+    <None Include="Resources\Background.jpg" />
+    <None Include="Resources\Background1.jpg" />
+    <None Include="Resources\AudioVideo1.png" />
+    <None Include="Resources\CDBurn1.png" />
+    <None Include="Resources\audacity_logo_whitebg %281%29.png" />
+    <None Include="Resources\BurnMP3.png" />
+    <None Include="Resources\BackButton.jpg" />
+    <Content Include="html docs\AudioSpeechVideoTab.html" />
+    <Content Include="html docs\BurningWindowForm.html" />
+    <Content Include="html docs\CdDVDburner.html" />
+    <Content Include="html docs\css\base.css" />
+    <Content Include="html docs\css\dynatree\chm\0.png" />
+    <Content Include="html docs\css\dynatree\chm\1.png" />
+    <Content Include="html docs\css\dynatree\chm\10.png" />
+    <Content Include="html docs\css\dynatree\chm\11.png" />
+    <Content Include="html docs\css\dynatree\chm\12.png" />
+    <Content Include="html docs\css\dynatree\chm\13.png" />
+    <Content Include="html docs\css\dynatree\chm\14.png" />
+    <Content Include="html docs\css\dynatree\chm\15.png" />
+    <Content Include="html docs\css\dynatree\chm\16.png" />
+    <Content Include="html docs\css\dynatree\chm\17.png" />
+    <Content Include="html docs\css\dynatree\chm\18.png" />
+    <Content Include="html docs\css\dynatree\chm\19.png" />
+    <Content Include="html docs\css\dynatree\chm\2.png" />
+    <Content Include="html docs\css\dynatree\chm\20.png" />
+    <Content Include="html docs\css\dynatree\chm\21.png" />
+    <Content Include="html docs\css\dynatree\chm\22.png" />
+    <Content Include="html docs\css\dynatree\chm\23.png" />
+    <Content Include="html docs\css\dynatree\chm\24.png" />
+    <Content Include="html docs\css\dynatree\chm\25.png" />
+    <Content Include="html docs\css\dynatree\chm\26.png" />
+    <Content Include="html docs\css\dynatree\chm\27.png" />
+    <Content Include="html docs\css\dynatree\chm\28.png" />
+    <Content Include="html docs\css\dynatree\chm\29.png" />
+    <Content Include="html docs\css\dynatree\chm\3.png" />
+    <Content Include="html docs\css\dynatree\chm\30.png" />
+    <Content Include="html docs\css\dynatree\chm\31.png" />
+    <Content Include="html docs\css\dynatree\chm\32.png" />
+    <Content Include="html docs\css\dynatree\chm\33.png" />
+    <Content Include="html docs\css\dynatree\chm\34.png" />
+    <Content Include="html docs\css\dynatree\chm\35.png" />
+    <Content Include="html docs\css\dynatree\chm\36.png" />
+    <Content Include="html docs\css\dynatree\chm\37.png" />
+    <Content Include="html docs\css\dynatree\chm\38.png" />
+    <Content Include="html docs\css\dynatree\chm\39.png" />
+    <Content Include="html docs\css\dynatree\chm\4.png" />
+    <Content Include="html docs\css\dynatree\chm\40.png" />
+    <Content Include="html docs\css\dynatree\chm\41.png" />
+    <Content Include="html docs\css\dynatree\chm\5.png" />
+    <Content Include="html docs\css\dynatree\chm\6.png" />
+    <Content Include="html docs\css\dynatree\chm\7.png" />
+    <Content Include="html docs\css\dynatree\chm\8.png" />
+    <Content Include="html docs\css\dynatree\chm\9.png" />
+    <Content Include="html docs\css\dynatree\chm\icons.gif" />
+    <Content Include="html docs\css\dynatree\chm\loading.gif" />
+    <Content Include="html docs\css\dynatree\chm\ui.dynatree.css" />
+    <Content Include="html docs\css\dynatree\chm\vline.gif" />
+    <Content Include="html docs\css\dynatree\folder\0.png" />
+    <Content Include="html docs\css\dynatree\folder\1.png" />
+    <Content Include="html docs\css\dynatree\folder\10.png" />
+    <Content Include="html docs\css\dynatree\folder\11.png" />
+    <Content Include="html docs\css\dynatree\folder\12.png" />
+    <Content Include="html docs\css\dynatree\folder\13.png" />
+    <Content Include="html docs\css\dynatree\folder\14.png" />
+    <Content Include="html docs\css\dynatree\folder\15.png" />
+    <Content Include="html docs\css\dynatree\folder\16.png" />
+    <Content Include="html docs\css\dynatree\folder\17.png" />
+    <Content Include="html docs\css\dynatree\folder\18.png" />
+    <Content Include="html docs\css\dynatree\folder\19.png" />
+    <Content Include="html docs\css\dynatree\folder\2.png" />
+    <Content Include="html docs\css\dynatree\folder\20.png" />
+    <Content Include="html docs\css\dynatree\folder\21.png" />
+    <Content Include="html docs\css\dynatree\folder\22.png" />
+    <Content Include="html docs\css\dynatree\folder\23.png" />
+    <Content Include="html docs\css\dynatree\folder\24.png" />
+    <Content Include="html docs\css\dynatree\folder\25.png" />
+    <Content Include="html docs\css\dynatree\folder\26.png" />
+    <Content Include="html docs\css\dynatree\folder\27.png" />
+    <Content Include="html docs\css\dynatree\folder\28.png" />
+    <Content Include="html docs\css\dynatree\folder\29.png" />
+    <Content Include="html docs\css\dynatree\folder\3.png" />
+    <Content Include="html docs\css\dynatree\folder\30.png" />
+    <Content Include="html docs\css\dynatree\folder\31.png" />
+    <Content Include="html docs\css\dynatree\folder\32.png" />
+    <Content Include="html docs\css\dynatree\folder\33.png" />
+    <Content Include="html docs\css\dynatree\folder\34.png" />
+    <Content Include="html docs\css\dynatree\folder\35.png" />
+    <Content Include="html docs\css\dynatree\folder\36.png" />
+    <Content Include="html docs\css\dynatree\folder\37.png" />
+    <Content Include="html docs\css\dynatree\folder\38.png" />
+    <Content Include="html docs\css\dynatree\folder\39.png" />
+    <Content Include="html docs\css\dynatree\folder\4.png" />
+    <Content Include="html docs\css\dynatree\folder\40.png" />
+    <Content Include="html docs\css\dynatree\folder\41.png" />
+    <Content Include="html docs\css\dynatree\folder\5.png" />
+    <Content Include="html docs\css\dynatree\folder\6.png" />
+    <Content Include="html docs\css\dynatree\folder\7.png" />
+    <Content Include="html docs\css\dynatree\folder\8.png" />
+    <Content Include="html docs\css\dynatree\folder\9.png" />
+    <Content Include="html docs\css\dynatree\folder\icons.gif" />
+    <Content Include="html docs\css\dynatree\folder\loading.gif" />
+    <Content Include="html docs\css\dynatree\folder\ui.dynatree.css" />
+    <Content Include="html docs\css\dynatree\folder\vline.gif" />
+    <Content Include="html docs\css\dynatree\vista\0.png" />
+    <Content Include="html docs\css\dynatree\vista\1.png" />
+    <Content Include="html docs\css\dynatree\vista\10.png" />
+    <Content Include="html docs\css\dynatree\vista\11.png" />
+    <Content Include="html docs\css\dynatree\vista\12.png" />
+    <Content Include="html docs\css\dynatree\vista\13.png" />
+    <Content Include="html docs\css\dynatree\vista\14.png" />
+    <Content Include="html docs\css\dynatree\vista\15.png" />
+    <Content Include="html docs\css\dynatree\vista\16.png" />
+    <Content Include="html docs\css\dynatree\vista\17.png" />
+    <Content Include="html docs\css\dynatree\vista\18.png" />
+    <Content Include="html docs\css\dynatree\vista\19.png" />
+    <Content Include="html docs\css\dynatree\vista\2.png" />
+    <Content Include="html docs\css\dynatree\vista\20.png" />
+    <Content Include="html docs\css\dynatree\vista\21.png" />
+    <Content Include="html docs\css\dynatree\vista\22.png" />
+    <Content Include="html docs\css\dynatree\vista\23.png" />
+    <Content Include="html docs\css\dynatree\vista\24.png" />
+    <Content Include="html docs\css\dynatree\vista\25.png" />
+    <Content Include="html docs\css\dynatree\vista\26.png" />
+    <Content Include="html docs\css\dynatree\vista\27.png" />
+    <Content Include="html docs\css\dynatree\vista\28.png" />
+    <Content Include="html docs\css\dynatree\vista\29.png" />
+    <Content Include="html docs\css\dynatree\vista\3.png" />
+    <Content Include="html docs\css\dynatree\vista\30.png" />
+    <Content Include="html docs\css\dynatree\vista\31.png" />
+    <Content Include="html docs\css\dynatree\vista\32.png" />
+    <Content Include="html docs\css\dynatree\vista\33.png" />
+    <Content Include="html docs\css\dynatree\vista\34.png" />
+    <Content Include="html docs\css\dynatree\vista\35.png" />
+    <Content Include="html docs\css\dynatree\vista\36.png" />
+    <Content Include="html docs\css\dynatree\vista\37.png" />
+    <Content Include="html docs\css\dynatree\vista\38.png" />
+    <Content Include="html docs\css\dynatree\vista\39.png" />
+    <Content Include="html docs\css\dynatree\vista\4.png" />
+    <Content Include="html docs\css\dynatree\vista\40.png" />
+    <Content Include="html docs\css\dynatree\vista\41.png" />
+    <Content Include="html docs\css\dynatree\vista\5.png" />
+    <Content Include="html docs\css\dynatree\vista\6.png" />
+    <Content Include="html docs\css\dynatree\vista\7.png" />
+    <Content Include="html docs\css\dynatree\vista\8.png" />
+    <Content Include="html docs\css\dynatree\vista\9.png" />
+    <Content Include="html docs\css\dynatree\vista\icons.gif" />
+    <Content Include="html docs\css\dynatree\vista\loading.gif" />
+    <Content Include="html docs\css\dynatree\vista\ui.dynatree.css" />
+    <Content Include="html docs\css\hnd.css" />
+    <Content Include="html docs\css\ielte8.css" />
+    <Content Include="html docs\css\reset.css" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="html docs\css\silver-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="html docs\css\silver-theme\jquery-ui-1.8.12.custom.css" />
+    <Content Include="html docs\css\toc.css" />
+    <Content Include="html docs\EmailandTextTabs.html" />
+    <Content Include="html docs\Gettinghelp.html" />
+    <Content Include="html docs\GettingStarted.html" />
+    <Content Include="html docs\HelpFIles.html" />
+    <Content Include="html docs\img\arrow_left.png" />
+    <Content Include="html docs\img\arrow_right.png" />
+    <Content Include="html docs\img\arrow_up.png" />
+    <Content Include="html docs\img\book-closed.png" />
+    <Content Include="html docs\img\book.png" />
+    <Content Include="html docs\img\footer-bg.png" />
+    <Content Include="html docs\img\header-bg.png" />
+    <Content Include="html docs\img\topic.png" />
+    <Content Include="html docs\Introduction.html" />
+    <Content Include="html docs\js\hnd.js" />
+    <Content Include="html docs\js\hndjsse.js" />
+    <Content Include="html docs\js\hndsd.js" />
+    <Content Include="html docs\js\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="html docs\js\jquery.cookie.js" />
+    <Content Include="html docs\js\jquery.dynatree.min.js" />
+    <Content Include="html docs\js\jquery.min.js" />
+    <Content Include="html docs\lib\AudioVidTab.png" />
+    <Content Include="html docs\lib\Clock1.png" />
+    <Content Include="html docs\lib\CMMSSerCred.png" />
+    <Content Include="html docs\lib\GroupEmail.png" />
+    <Content Include="html docs\lib\GrpEmailOptions.png" />
+    <Content Include="html docs\lib\GrpText.png" />
+    <Content Include="html docs\lib\GrpText1.png" />
+    <Content Include="html docs\lib\GrpTextOptions.png" />
+    <Content Include="html docs\lib\InternConOK.png" />
+    <Content Include="html docs\lib\InternetNOtCon.png" />
+    <Content Include="html docs\lib\LiscTab.png" />
+    <Content Include="html docs\lib\LogFiles.png" />
+    <Content Include="html docs\lib\LogFilesTab.png" />
+    <Content Include="html docs\lib\lscAddNew.png" />
+    <Content Include="html docs\lib\MachNamesGRP1.png" />
+    <Content Include="html docs\lib\MachNamesTab.png" />
+    <Content Include="html docs\lib\MachOOE.png" />
+    <Content Include="html docs\lib\MachVisGRP.png" />
+    <Content Include="html docs\lib\MachVisibleTab.png" />
+    <Content Include="html docs\lib\MecCentTab.png" />
+    <Content Include="html docs\lib\MesCentGRP.png" />
+    <Content Include="html docs\lib\Network.png" />
+    <Content Include="html docs\lib\NetworkTab.png" />
+    <Content Include="html docs\lib\NewItem.png" />
+    <Content Include="html docs\lib\NewItem1.png" />
+    <Content Include="html docs\lib\NewItem2.png" />
+    <Content Include="html docs\lib\NewItem3.png" />
+    <Content Include="html docs\lib\NewItem6.png" />
+    <Content Include="html docs\lib\NewItem7.png" />
+    <Content Include="html docs\lib\NewItem8.png" />
+    <Content Include="html docs\lib\Nowireless.png" />
+    <Content Include="html docs\lib\PanelSpeed.png" />
+    <Content Include="html docs\lib\ServCred1.png" />
+    <Content Include="html docs\lib\ShiftGRP.png" />
+    <Content Include="html docs\lib\ShiftTab.png" />
+    <Content Include="html docs\lib\Splash.png" />
+    <Content Include="html docs\lib\StypeGRP.png" />
+    <Content Include="html docs\lib\StypeSelection.png" />
+    <Content Include="html docs\lib\StypesTab.png" />
+    <Content Include="html docs\lib\TabServ.png" />
+    <Content Include="html docs\lib\TBVol.png" />
+    <Content Include="html docs\lib\TxtEmailTab.png" />
+    <Content Include="html docs\lib\VidOptions.png" />
+    <Content Include="html docs\lib\Voice And Sound.png" />
+    <Content Include="html docs\lib\Volume.png" />
+    <Content Include="html docs\lib\VolumeGroup.png" />
+    <Content Include="html docs\lib\WifiOK.png" />
+    <Content Include="html docs\lib\Wirless icon.png" />
+    <Content Include="html docs\LicensingInformation.html" />
+    <Content Include="html docs\LogFiles.html" />
+    <Content Include="html docs\MachineMonitoringTab.html" />
+    <Content Include="html docs\MachineNamingTab.html" />
+    <Content Include="html docs\MainForm.html" />
+    <Content Include="html docs\MessageCenter.html" />
+    <Content Include="html docs\MP3SoundEditor.html" />
+    <Content Include="html docs\MP3TagEditor.html" />
+    <Content Include="html docs\NetworkingWirelessTab.html" />
+    <Content Include="html docs\QuickStart.html" />
+    <Content Include="html docs\ServiceTypesTab.html" />
+    <Content Include="html docs\SettingupDisplayandPASpeaker.html" />
+    <Content Include="html docs\Settingupforthefirsttime.html" />
+    <Content Include="html docs\ShiftsTab.html" />
+    <Content Include="html docs\Systemrequirements.html" />
+    <Content Include="html docs\TableofContents.html" />
+    <Content Include="html docs\TattleTale Help 2.html" />
+    <Content Include="html docs\TattleTale Server Edition.html" />
+    <Content Include="html docs\toc.html" />
+    <Content Include="html docs\Welcome.html" />
+    <Content Include="html docs\Whatsnew.html" />
+    <Content Include="html docs\Youtube Downloader Platinum.html" />
+    <None Include="Resources\Audio Trim.png" />
+    <Content Include="MP3.ico" />
+    <Content Include="Resources\CDCat.ico" />
+    <None Include="Resources\eeditMP3Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BurnMedia\BurnMedia.csproj">
+      <Project>{3b8fdb66-1d5a-4533-9f51-2d693bf0ef23}</Project>
+      <Name>BurnMedia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ColorTrackBar_src\ColorTrackBar\ColorTrackBar.csproj">
+      <Project>{d9250279-3f1b-4be9-94ea-ede47fad93d9}</Project>
+      <Name>ColorTrackBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FFMPEG-CSWrapper\FFMPEG-CSWrapper.csproj">
+      <Project>{aa83973a-6ad4-4963-94ef-75b9f1efcdda}</Project>
+      <Name>FFMPEG-CSWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{b128ac9f-d1b3-4538-98da-6d2bff01979b}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.8.0\build\Accord.targets'))" />
+    <Error Condition="!Exists('..\packages\Accord.Video.FFMPEG.3.8.0\build\Accord.Video.FFMPEG.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.Video.FFMPEG.3.8.0\build\Accord.Video.FFMPEG.targets'))" />
+  </Target>
+  <Import Project="..\packages\Accord.Video.FFMPEG.3.8.0\build\Accord.Video.FFMPEG.targets" Condition="Exists('..\packages\Accord.Video.FFMPEG.3.8.0\build\Accord.Video.FFMPEG.targets')" />
+</Project>
