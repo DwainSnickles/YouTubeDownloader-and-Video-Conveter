@@ -1,5 +1,5 @@
 # YouTubeDownloader-and-Video-Conveter
-# This is another youtube downloader with many extras
+![Main](https://user-images.githubusercontent.com/26853477/73417638-6f8e6f80-42de-11ea-93ce-fd0c62f0c597.PNG)
 # Software usage:
 After installing software simply go to your youtube video right click on the video url the software automatically set the video parameters and by clicking the button it downloads the video. 
 There is also a video converter to conver to the following formats: MP4, Avi, Mpeg, Flv, MP3
